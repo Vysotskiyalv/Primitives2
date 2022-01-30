@@ -1,13 +1,17 @@
 public class Main {
   public static void main(String[] args) {
-    int accountrefill = 800;
+    int accountrefill = 5000;
     int rublesFor1Bonus = 100;
-    int totalBonusRubles = accountrefill / rublesFor1Bonus;
-    int totalaccount = accountrefill + totalBonusRubles ;
+    int totalBonusRubles ;
+    int totalaccount ;
     if (accountrefill > 1000) {
-      System.out.println(totalaccount);
+      totalBonusRubles = accountrefill/rublesFor1Bonus;
+      totalaccount =accountrefill + totalBonusRubles;
+            System.out.println(totalaccount);
     }else {
-      System.out.println(accountrefill);
+      totalBonusRubles = 0;
+      totalaccount = accountrefill;
+      System.out.println(totalaccount);
     }
   }
 }
